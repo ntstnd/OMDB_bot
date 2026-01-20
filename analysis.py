@@ -145,7 +145,7 @@ def create_year_chart(user_id):
     years = []
     for movie in user_searches[user_id]:
         year = movie.get('Year', '')
-        years.extend(year)
+        years.append(year)
     
     if not years:
         return None
